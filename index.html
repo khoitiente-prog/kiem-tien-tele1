@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kiếm Xu Telegram</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>💰 Kiếm Xu Tele1</h1>
+    </header>
+    <nav>
+      <button onclick="switchTab('home')">🏠 Home</button>
+      <button onclick="switchTab('tasks')">🧠 Nhiệm vụ</button>
+      <button onclick="switchTab('leaderboard')">🥇 BXH</button>
+      <button onclick="switchTab('withdraw')">🧲 Rút thưởng</button>
+    </nav>
+    <main id="main-content">
+      <div id="home" class="tab active">
+        <p>Chào mừng bạn đến với app kiếm xu!</p>
+        <p>Số dư của bạn: <span id="balance">0</span> xu</p>
+      </div>
+      <div id="tasks" class="tab">
+        <button onclick="watchVideo()">🎥 Xem video (+10 xu)</button>
+      </div>
+      <div id="leaderboard" class="tab">
+        <p>Top người dùng sẽ hiển thị ở đây.</p>
+      </div>
+      <div id="withdraw" class="tab">
+        <input type="text" id="wallet" placeholder="Nhập SĐT Momo hoặc PayPal" />
+        <button onclick="withdraw()">🧲 Rút 1000 xu</button>
+      </div>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
